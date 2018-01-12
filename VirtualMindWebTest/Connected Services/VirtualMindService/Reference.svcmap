@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5bdade11-e053-4d5b-8271-de0bd6b74109" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49887/VirtualMindService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VirtualMindService.xsd" MetadataType="Schema" ID="f95e500e-336d-4958-8862-9382b15b793b" SourceId="1" SourceUrl="http://localhost:49887/VirtualMindService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VirtualMindService1.xsd" MetadataType="Schema" ID="32547797-2c5b-4b1d-bb7e-606b00e18236" SourceId="1" SourceUrl="http://localhost:49887/VirtualMindService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VirtualMindService2.xsd" MetadataType="Schema" ID="511d0549-4361-447d-a07f-abb3945b2766" SourceId="1" SourceUrl="http://localhost:49887/VirtualMindService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VirtualMindService3.xsd" MetadataType="Schema" ID="5278c0db-e4cc-4712-a23b-b45325b99a3e" SourceId="1" SourceUrl="http://localhost:49887/VirtualMindService.svc?xsd=xsd3" />
+    <MetadataFile FileName="VirtualMindService4.xsd" MetadataType="Schema" ID="214ba4c7-ae50-41a2-954b-da87f29105a7" SourceId="1" SourceUrl="http://localhost:49887/VirtualMindService.svc?xsd=xsd4" />
+    <MetadataFile FileName="VirtualMindService5.xsd" MetadataType="Schema" ID="84a8b2e6-b05d-4833-aec3-e3d58854a9f8" SourceId="1" SourceUrl="http://localhost:49887/VirtualMindService.svc?xsd=xsd5" />
+    <MetadataFile FileName="VirtualMindService.disco" MetadataType="Disco" ID="5931f244-a3dd-4c8c-95ce-bead0beebf02" SourceId="1" SourceUrl="http://localhost:49887/VirtualMindService.svc?disco" />
+    <MetadataFile FileName="VirtualMindService.wsdl" MetadataType="Wsdl" ID="6977d832-c5af-4c28-9771-86a73f5bc8b0" SourceId="1" SourceUrl="http://localhost:49887/VirtualMindService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

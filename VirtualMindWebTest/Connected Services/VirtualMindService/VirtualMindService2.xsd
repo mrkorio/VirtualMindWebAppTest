@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/VirtualMindTestService.Returns" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/VirtualMindTestService.Returns" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49887/VirtualMindService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/BE.Models" />
+  <xs:import schemaLocation="http://localhost:49887/VirtualMindService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/VirtualMindTestService.Returns.Base" />
+  <xs:complexType name="ReturnOfMoneyVNIoeB4G">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ReturnOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/VirtualMindTestService.Returns" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Money" Namespace="http://schemas.datacontract.org/2004/07/BE.Models" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/VirtualMindTestService.Returns.Base" base="q1:BaseReturn">
+        <xs:sequence>
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/BE.Models" minOccurs="0" name="item" nillable="true" type="q2:Money" />
+          <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/BE.Models" minOccurs="0" name="list" nillable="true" type="q3:ArrayOfMoney" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReturnOfMoneyVNIoeB4G" nillable="true" type="tns:ReturnOfMoneyVNIoeB4G" />
+  <xs:complexType name="ReturnOfUserVNIoeB4G">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ReturnOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/VirtualMindTestService.Returns" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="User" Namespace="http://schemas.datacontract.org/2004/07/BE.Models" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/VirtualMindTestService.Returns.Base" base="q4:BaseReturn">
+        <xs:sequence>
+          <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/BE.Models" minOccurs="0" name="item" nillable="true" type="q5:User" />
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/BE.Models" minOccurs="0" name="list" nillable="true" type="q6:ArrayOfUser" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ReturnOfUserVNIoeB4G" nillable="true" type="tns:ReturnOfUserVNIoeB4G" />
+</xs:schema>

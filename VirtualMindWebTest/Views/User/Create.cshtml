@@ -1,0 +1,54 @@
+﻿
+@model VirtualMindWebTest.VirtualMindService.User
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Crear usuario</h2>
+
+@using (Html.BeginForm("Create", "User", FormMethod.Post,
+                new
+                {
+                    data_parsley_validate="",
+                    id = "createUserForm"
+                }
+    ))
+{
+
+    <div class="row">
+        <div class="form-group">
+            @Html.TextBoxFor(m => m.nombre, new { @required = "required", @class = "form-control", @placeholder = "Nombre" })
+        </div>
+    
+    </div>
+    <div class="row">
+        <div class=" form-group">
+            @Html.TextBoxFor(m => m.apellido, new { @required = "required", @class = "form-control", @placeholder = "Apellido" })
+        </div>
+      
+    </div>
+ 
+    <div class="row">
+        <div class=" form-group">
+            @Html.TextBoxFor(m => m.email, new { @required = "required", @data_parsley_type="email",  @class = "form-control", @placeholder = "Email" })
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class=" form-group">
+            @Html.TextBoxFor(m => m.password, new { @required = "required", @class = "form-control", @placeholder = "Contraseña", @type = "password"})
+        </div>
+      
+    </div>
+    <div class="row">
+        <div class=" form-group">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+      
+    </div>
+
+
+
+}
+

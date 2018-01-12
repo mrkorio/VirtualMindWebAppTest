@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/VirtualMindTestService.Returns.Base" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/VirtualMindTestService.Returns.Base" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:49887/VirtualMindService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/BE.Models.Base" />
+  <xs:complexType name="BaseReturn">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BE.Models.Base" minOccurs="0" name="error" nillable="true" type="q1:Error" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseReturn" nillable="true" type="tns:BaseReturn" />
+</xs:schema>
